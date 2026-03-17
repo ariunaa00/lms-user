@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/footer.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/sidenav.js"></script>
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/takeExam.css">
+</head>
+
+
+<body>
+    <!-- <app-header></app-header> -->
+    <main class="quiz-container" id="home-main">
+        <div class="quiz-header">
+            <div id="quiz-timer" >10:00</div>
+        </div>
+
+        <div id="quiz-card" class="quiz-card">
+
+            <!--Асуулт-->
+            <image id="imagePreview" class="quiz-image" style="display: none;" src="assets/images/whiterhinorub.jpg" />
+            <audio id="audioPreview" class="quiz-image" controls style="display:none;"></audio>
+            <video id="videoPreview" class="quiz-image" controls style="display:none;"></video>
+
+            <div class="quiz-question-sec">
+                <span class="quiz-question" id="quiz-question">Асуулт гэж юу вэ?</span>
+                <span class="quiz-question-current" id="quiz-question-current">Асуулт 1/10</span>
+            </div>
+
+            <!--Хариултууд-->
+            <div class="quiz-answers-sec" id="quiz-answers-sec">
+            </div>
+            <button id="quiz-next-btn" disabled class="quiz-next-btn">Дараагийн</button>
+        </div>
+
+        <div id="quiz-review-card" class="quiz-card" >
+            <div class="answer-point" id="answer-point">
+                <span id="answer-point-text">50%</span>
+            </div>
+            <div class="answer-statistic">
+                <label for="answered-num">Хариулсан асуултын тоо</label>
+                <span id="answered-num">10/10</span>
+
+                <label for="answered-correct-num">Зөв хариулсан тоо</label>
+                <span id="answered-correct-num">5/10</span>
+
+                <label for="answered-wrong-num">Буруу хариулсан тоо</label>
+                <span id="answered-wrong-num">5/10</span>
+
+                <label for="answered-wrong-num">Зарцуулсан хугацаа</label>
+                <span id="answered-time">5:00 мин</span>
+
+                <div class="back-btn">
+                    <button id="back-btn" class="btn btn-secondary">Нүүр хуудасруу буцах</button>
+                </div>
+            </div>
+        </div>
+        <div id="quiz-pagination-sec" class="quiz-pagination-sec" style="display: none;">
+            <div class="quiz-page-view quiz-page-view-answered">1</div>
+            <div class="quiz-page-view quiz-page-view-current">2</div>
+            <div class="quiz-page-view">3</div>
+            <div class="quiz-page-view">4</div>
+            <div class="quiz-page-view">5</div>
+            <div class="quiz-page-view">6</div>
+            <div class="quiz-page-view">7</div>
+            <div class="quiz-page-view">8</div>
+            <div class="quiz-page-view">8</div>
+            <div class="quiz-page-view">10</div>
+        </div>
+
+    </main>
+    <div class="modal-overlay" id="exam-modal">
+
+        <div class="modal-wrapper lesson-modal-wrapper">
+            <div class="modal-header">
+                <span>Шалгалт өгөх тухай</span>
+                <image id="lesson-modal-close-btn" width="10px" height="10px" src="assets/images/close.png">
+            </div>
+
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" id="exam-modal-ok-btn">Ойлголоо</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/takeExam.js"></script>
+    <script src="js/auth.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шалгалтын систем</title>
+
+    <link rel="stylesheet" href="css/login-style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <header class="login-header">
+        <h1>Шалгалтын Систем</h1>
+    </header>
+    <main class="container">
+
+        <section class="content">
+            <div class="login-card signin-card">
+                <div class="login-wrapper">
+                    <p class="login-title">Бүртгэл</p>
+
+                    <form id="signin-form" class="input-section">
+                        <input type="text" id="firstname" class="input" placeholder="Овог" >
+                        <span class="error-msg" id="firstname-err"></span>
+
+                        <input type="text" id="lastname" class="input" placeholder="Нэр" >
+                        <span class="error-msg" id="lastname-err"></span>
+
+                        <input  id="email" class="input" placeholder="И-мэйл" >
+                        <span class="error-msg" id="email-err"></span>
+
+                        <input type="tel" id="phonenum" class="input" placeholder="Утасны дугаар" >
+                        <span class="error-msg" id="phonenum-err"></span>
+
+
+                        <input type="password" id="password" class="input" placeholder="Нууц үг" >
+                        <span class="error-msg" id="password-err"></span>
+
+                        <input type="password" id="re-password" class="input" placeholder="Нууц үгээ давтан оруулна уу" >
+                        <span class="error-msg" id="repassword-err"></span>
+
+                        <button type="submit" class="login-button signin-btn btn-primary">Бүртгүүлэх</button>
+                    </form>
+
+                    <a class="anchor-link" href="login.html">Нэвтрэх</a>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+</body>
+<footer>
+    <p>© 2026 Examination App</p>
+</footer>
+
+<script src="js/signin.js"></script>
+
+</html>

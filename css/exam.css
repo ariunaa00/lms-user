@@ -1,0 +1,145 @@
+:root {
+/* Primary and Secondary */
+  --primary-color: #32DA16;          /* Bright green */
+  --secondary-color: #16DA64;        /* Soft mint green */
+
+  /* Complementary and Accent */
+  --complementary-color: #DA1632;    /* Vivid red */
+  --accent-color: #16A6DA;           /* Aqua/teal */
+
+  /* Triadic */
+  --triadic1-color: #DA16A6;         /* Bright magenta */
+  --triadic2-color: #A616DA;         /* Purple */
+
+  /* Neutral / Background / Text */
+  --background-color-light: #F0F0F0;
+  --background-color-dark: #1A1A1A;
+  --text-color-primary: #1A1A1A;
+  --text-color-secondary: #28B112;   /* Darker green for depth */
+  --highlight-color: #A0F2A8;        /* Lighter green for highlights */
+  --border-color: #29B512
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+td,
+th {
+    padding: 8px;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+tr {
+    border-radius: 5px;
+}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: var(--text-color-secondary);
+    color: white;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 190px;
+
+}
+
+
+.questions-table {
+    margin-top: 10px;
+}
+
+.question-modal-wrapper {
+    top: 50%;
+    width: 500px;
+    height: 700px;
+    font-size: 12px
+}
+
+
+.quetion-modal-close-btn {
+    cursor: pointer;
+}
+
+.quetion-modal-close-btn:hover {
+    transform: scale(1.05);
+}
+
+.question-form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.question-form-input div {
+    margin-top: 10px;
+}
+
+
+.question-form-input label {
+    margin-top: 10px;
+}
+
+.question-form-input input {
+    margin-top: 10px;
+}
+
+.question-answers-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.question-answers-list-div {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.answer-input {
+    width: 90%;
+}
+.question-remove-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #FFCFCF;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+
+.question-table-link-col {
+    font-weight: 500;
+    cursor: pointer;
+}
+.question-table-link-col:hover {
+    color: var(--accent-color)
+}
