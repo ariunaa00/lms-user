@@ -6,7 +6,7 @@ class AppSideNav extends HTMLElement {
         <image class="icon" alt="lesson" src="assets/images/online-lesson.png"><a href="index.html">Хичээлүүд</a>
     </div>
     <div class="nav-menu-div">
-        <image class="icon" alt="exam" src="assets/images/exam.png"><a href="examResult.html">Шалгалтын үр дүн</a>
+        <image class="icon" alt="exam" src="assets/images/exam.png"><a href="exam.html">Шалгалтын үр дүн</a>
     </div>
 </div>
 `;
