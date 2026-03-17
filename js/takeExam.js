@@ -334,6 +334,6 @@ examModalOkBtn.addEventListener('click', () => {
 quizNextBtn.addEventListener('click', next);
 
 statBackBtn.addEventListener('click', () => {
-    window.location.replace(`examResult.html?examId=${examId}`);
+    window.location.replace(`index.html`);
     clearStatCard();
 })
