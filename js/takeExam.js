@@ -30,7 +30,7 @@ const closeEditModal = (e, clickedOutside) => {
 }
 
 const setTimer = () => {
-    let time = 1 * 60; // 10 minutes in seconds
+    let time = 10 * 60; // 10 minutes in seconds
 
     const timerElement = document.getElementById("quiz-timer");
 
