@@ -237,7 +237,7 @@ const finishExam = async () => {
     quizReviewCard.style.display = 'block'
 
     // make a stat
-    const minutes = 10 - Math.floor(totalTime / 60);
+    const minutes = Math.floor(totalTime / 60);
 
     const currentExam = getCurrentExam();
     const exam = currentExam.exam
