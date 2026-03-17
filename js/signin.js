@@ -36,7 +36,7 @@ signinForm.addEventListener("submit", async (event) => {
 
     if (validate()) {
 
-        const res = await fetch("http://localhost:3000/api/v1/auth/user/signup", {
+        const res = await fetch("http://44.222.255.219:3000/api/v1/auth/user/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

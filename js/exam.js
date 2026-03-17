@@ -5,7 +5,7 @@ let examsG = []
 
 const getExams = async () => {
     try {
-        const res = await fetch(`http://localhost:3000/api/v1/lesson/exams`, {
+        const res = await fetch(`http://44.222.255.219:3000/api/v1/lesson/exams`, {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json",

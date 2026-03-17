@@ -176,7 +176,7 @@ const setCurrentQuestion = (selectedAnswer) => {
 }
 
 const startExam = async () => {
-    const res = await fetch(`http://localhost:3000/api/v1/exam/${examId}`, {
+    const res = await fetch(`http://44.222.255.219:3000/api/v1/exam/${examId}`, {
         method: 'GET',
         headers: {
             "Content-Type": "application/json",
@@ -275,7 +275,7 @@ const finishExam = async () => {
 
 
     try {
-        const res = await fetch(`http://localhost:3000/api/v1/exam/${exam.id}/result`, {
+        const res = await fetch(`http://44.222.255.219:3000/api/v1/exam/${exam.id}/result`, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",

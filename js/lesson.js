@@ -6,7 +6,7 @@ let lessonsG = []
 
 const getLessons = async () => {
     try {
-        const res = await fetch(`http://localhost:3000/api/v1/lesson/`, {
+        const res = await fetch(`http://44.222.255.219:3000/api/v1/lesson/`, {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json",
